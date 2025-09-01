@@ -44,31 +44,38 @@ body {
   --accent-s: 32%;
   --accent-l: 52%;
 
-  /* --header-height: 3em; */
-
-  --link-decoration: none;
-  --link-decoration-hover: none;
-  --link-external-decoration: none;
-  --link-external-decoration-hover: none;
+  --link-decoration: underline;
+  --link-decoration-hover: underline;
+  --link-external-decoration: underline;
+  --link-external-decoration-hover: underline;
 
   --tag-decoration: none;
   --tag-decoration-hover: underline;
-  --tag-padding-x: 0.5em;
+  --tag-padding-x: 0.4em;
   --tag-padding-y: 0.2em;
   --tag-radius: 0.5em;
 
-  --tab-font-weight: 700;
-  --tab-outline-width: 0.15em;
-  --tab-radius-active: 0.65em;
+  --tab-font-weight: 600;
+  --tab-curve: 0.6em;
+  --tab-radius: 0.5em;
+  --tab-radius-active: 0.5em;
+  --tab-outline-color: var(--dark2);
+  --tab-outline-width: 2px;
+  --tab-text-color-focused-highlighted: var(--frost1);
+  --tab-text-color-focused-active: var(--frost1);
+
+  --titlebar-background: var(--dark1);
+  --titlebar-background-focused: var(--dark1);
+  --titlebar-border-width: 0em;
+
+  --ribbon-background: var(--dark1);
+  --status-bar-background: var(--dark1);
+  --status-bar-border-color: var(--dark3);
 
   --bold-weight: 600;
 
-  --divider-width: 0.15em;
+  --divider-width: 0.2em;
 
-  --checkbox-size: 1.25em;
-  --checkbox-radius: 0.3em;
-
-  /* --list-indent:                    2em; */
   --embed-border-left: 6px double var(--interactive-accent);
 }
 
@@ -87,28 +94,43 @@ body {
   --color-yellow: var(--yellow);
   --color-orange-rgb: var(--orange_x);
   --color-orange: var(--orange);
-
   --background-primary: var(--dark0);
   --background-primary-alt: var(--dark0);
   --background-secondary: var(--dark1);
   --background-secondary-alt: var(--dark2);
   --background-modifier-border: var(--dark2);
-
+  --color-base-40: var(--dark1);
+  --color-base-20: var(--dark1);
   /* button colors  */
   --color-base-25: var(--dark0);
   --color-base-30: var(--dark1);
   --color-base-35: var(--dark2);
 
-  --color-base-40: var(--dark1);
-  --color-base-20: var(--dark1);
-
-  --cursor-line-background: rgba(var(--frost0_x), 0.2);
-
   --text-normal: var(--light2);
   --text-faint: var(--light0);
   --text-muted: var(--light1);
 
+  --text-highlight-bg: var(--frost1);
+  --text-highlight-fg: var(--dark0);
+  --text-accent: var(--frost0);
+  --text-accent-hover: var(--frost1);
+  --bold-color: var(--frost3);
+  --italic-color: var(--frost0);
+
+  --cursor-line-background: rgba(var(--frost0_x), 0.2);
+  --text-selection: rgba(var(--frost3_x), 0.6);
+  --flashing-background: rgba(var(--frost3_x), 0.3);
+
+  --titlebar-text-color-focused: var(--frost0);
+  --inline-title-color: var(--frost0);
+
+  --tab-text-color-focused-active: var(--frost3);
+  --tab-text-color-focused-active-current: var(--frost1);
+
   --link-url: var(--green);
+  --link-color: var(--purple);
+  --link-unresolved-color: var(--purple);
+  --link-external-color: var(--purple);
 
   --h1-color: var(--frost1);
   --h2-color: var(--frost2);
@@ -117,41 +139,18 @@ body {
   --h5-color: var(--red);
   --h6-color: var(--green);
 
-  --text-highlight-bg: var(--frost1);
-  --text-highlight-fg: var(--dark0);
-
-  --text-accent: var(--purple);
-  --text-accent-hover: var(--frost1);
-
   --tag-color: var(--frost2);
   --tag-background: var(--dark1);
   --tag-background-hover: var(--dark0);
 
-  --titlebar-text-color-focused: var(--frost0);
-
-  --inline-title-color: var(--frost0);
-
-  --bold-color: var(--frost3);
-  --italic-color: var(--frost0);
-
-  --checkbox-color: var(--frost2);
-  --checkbox-marker-color: var(--light3);
-  --checkbox-color-hover: var(--frost3);
-  --checkbox-border-color: var(--frost2);
-  --checkbox-border-color-hover: var(--frost3);
-  --checklist-done-color: rgba(var(--frost3_x), 0.9);
+  --code-normal: var(--light0);
+  --code-background: var(--dark1);
 
   --table-header-background: hsl(220, 16%, 16%);
   --table-header-background-hover: var(--dark3);
   --table-row-even-background: hsl(220, 16%, 20%);
   --table-row-odd-background: hsl(220, 16%, 24%);
   --table-row-background-hover: var(--dark3);
-
-  --text-selection: rgba(var(--frost3_x), 0.6);
-  --flashing-background: rgba(var(--frost3_x), 0.3);
-
-  --code-normal: var(--light0);
-  --code-background: var(--dark1);
 
   --mermaid-note: var(--frost3);
   --mermaid-loopline: var(--frost1);
@@ -180,128 +179,19 @@ body {
   --dataview-key-background: rgba(var(--frost2_x), 0.3);
   --dataview-value: var(--text-faint);
   --dataview-value-background: rgba(var(--red_x), 0.3);
-
-  --tab-text-color-focused-active: var(--frost3);
-  --tab-text-color-focused-active-current: var(--frost1);
 }
-
-/* .theme-light { */
-/*   --color-red-rgb: var(--red_x); */
-/*   --color-red: var(--red); */
-/*   --color-purple-rgb: var(--purple_x); */
-/*   --color-purple: var(--purple); */
-/*   --color-green-rgb: var(--green_x); */
-/*   --color-green: var(--green); */
-/*   --color-cyan-rgb: var(--frost1_x); */
-/*   --color-cyan: var(--frost1); */
-/*   --color-blue-rgb: var(--frost3_x); */
-/*   --color-blue: var(--frost3); */
-/*   --color-yellow-rgb: var(--yellow_x); */
-/*   --color-yellow: var(--yellow); */
-/*   --color-orange-rgb: var(--orange_x); */
-/*   --color-orange: var(--orange); */
-/**/
-/*   --background-primary: var(--light3); */
-/*   --background-primary-alt: var(--light3); */
-/*   --background-secondary: var(--light2); */
-/*   --background-secondary-alt: var(--light1); */
-/*   --background-modifier-border: var(--light1); */
-/**/
-/*   --cursor-line-background: rgba(var(--red_x), 0.1); */
-/**/
-/*   --text-normal: var(--dark2); */
-/*   --text-faint: var(--dark0); */
-/*   --text-muted: var(--dark1); */
-/**/
-/*   --link-url: var(--purple); */
-/**/
-/*   --h1-color: var(--purple); */
-/*   --h2-color: var(--yellow); */
-/*   --h3-color: var(--green); */
-/*   --h4-color: var(--purple); */
-/*   --h5-color: var(--frost0); */
-/*   --h6-color: var(--frost2); */
-/**/
-/*   --text-highlight-bg: var(--yellow); */
-/*   --text-highlight-fg: var(--dark0); */
-/**/
-/*   --text-accent: var(--orange); */
-/*   --text-accent-hover: var(--frost2); */
-/**/
-/*   --tag-color: var(--dark3); */
-/*   --tag-background: var(--light1); */
-/*   --tag-background-hover: var(--light0); */
-/**/
-/*   --titlebar-text-color-focused: var(--purple); */
-/**/
-/*   --inline-title-color: var(--yellow); */
-/**/
-/*   --bold-color: var(--green); */
-/*   --italic-color: var(--green); */
-/**/
-/*   --checkbox-color: var(--frost2); */
-/*   --checkbox-color-hover: var(--frost2); */
-/*   --checkbox-border-color: var(--frost2); */
-/*   --checkbox-border-color-hover: var(--frost2); */
-/*   --checklist-done-color: rgba(var(--dark2_x), 0.4); */
-/**/
-/*   --table-header-background: rgba(var(--light2_x), 0.2); */
-/*   --table-header-background-hover: var(--frost2); */
-/*   --table-row-even-background: rgba(var(--light2_x), 0.4); */
-/*   --table-row-odd-background: rgba(var(--light2_x), 0.8); */
-/*   --table-row-background-hover: var(--frost2); */
-/**/
-/*   --text-selection: rgba(var(--red_x), 0.6); */
-/*   --flashing-background: rgba(var(--red_x), 0.3); */
-/**/
-/*   --code-normal: var(--frost1); */
-/*   --code-background: var(--light2); */
-/**/
-/*   --mermaid-note: var(--frost0); */
-/*   --mermaid-loopline: var(--frost1); */
-/*   --mermaid-exclude: var(--light0); */
-/*   --mermaid-seqnum: var(--light0); */
-/**/
-/*   --icon-color-hover: var(--red); */
-/*   --icon-color-focused: var(--frost3); */
-/**/
-/*   --nav-item-color-hover: var(--red); */
-/*   --nav-item-color-active: var(--frost2); */
-/*   --nav-file-tag: rgba(var(--orange_x), 0.9); */
-/**/
-/*   --graph-line: var(--light0); */
-/*   --graph-node: var(--dark3); */
-/*   --graph-node-tag: var(--red); */
-/*   --graph-node-attachment: var(--green); */
-/**/
-/*   --calendar-hover: var(--red); */
-/*   --calendar-background-hover: var(--light0); */
-/*   --calendar-week: var(--orange); */
-/*   --calendar-today: var(--orange); */
-/**/
-/*   --dataview-key: var(--text-faint); */
-/*   --dataview-key-background: rgba(var(--frost2_x), 0.3); */
-/*   --dataview-value: var(--text-faint); */
-/*   --dataview-value-background: rgba(var(--red_x), 0.3); */
-/**/
-/*   --tab-text-color-focused-active: var(--frost2); */
-/*   --tab-text-color-focused-active-current: var(--purple); */
-/* } */
 
 table {
   border: 1px solid var(--background-secondary) !important;
   border-collapse: collapse;
 }
-
 thead {
   border-bottom: 2px solid var(--background-modifier-border) !important;
 }
-
 th {
   font-weight: 600 !important;
   border: 1px solid var(--background-secondary) !important;
 }
-
 td {
   border-left: 1px solid var(--background-secondary) !important;
   border-right: 1px solid var(--background-secondary) !important;
@@ -311,21 +201,17 @@ td {
 .markdown-rendered tbody tr:nth-child(even) {
   background-color: var(--table-row-even-background) !important;
 }
-
 .markdown-rendered tbody tr:nth-child(odd) {
   background-color: var(--table-row-odd-background) !important;
 }
-
 .markdown-rendered tbody tr:nth-child(even):hover,
 .markdown-rendered tbody tr:nth-child(odd):hover {
   background-color: var(--table-row-background-hover) !important;
 }
-
 .markdown-rendered mark {
   background-color: var(--text-highlight-bg);
   color: var(--text-highlight-fg);
 }
-
 .markdown-rendered mark a {
   color: var(--red) !important;
   font-weight: 600;
@@ -342,98 +228,48 @@ td {
   text-decoration: underline;
 }
 
-/* input[type="checkbox"] { */
-/*   border: 1px solid var(--checkbox-color); */
-/* } */
-/**/
-/* input[type="checkbox"]:checked { */
-/*   background-color: var(--checkbox-color); */
-/*   box-shadow: inset 0 0 0 2px var(--background-primary); */
-/* } */
-/**/
-/* input[type="checkbox"]:checked:after { */
-/*   display: none; */
-/* } */
-
-code[class*="language-"],
-pre[class*="language-"] {
-  line-height: var(--line-height-tight) !important;
-}
-
 .cm-url {
   color: var(--link-url) !important;
 }
-
 .cm-url:hover {
   color: var(--text-accent-hover) !important;
 }
-
 /* Keep highlight/marks the same between viewer and editor. */
 .cm-highlight {
   color: var(--text-highlight-fg) !important;
 }
-
 /* Keep inline code the same between viewer and editor. */
 .cm-inline-code {
   border-radius: var(--radius-s);
   font-size: var(--code-size);
   padding: 0.1em 0.25em;
 }
-
 .cm-formatting-code + .cm-inline-code {
   border-radius: 0;
   padding: 0.1em 0;
 }
-
 .cm-formatting-code {
   border-radius: var(--radius-s) 0 0 var(--radius-s);
   padding: 0.1em 0 0.1em 0.25em;
 }
-
 .cm-inline-code + .cm-formatting-code {
   border-radius: 0 var(--radius-s) var(--radius-s) 0;
   padding: 0.1em 0.25em 0.1em 0;
 }
-
 .cm-line .cm-strong {
   color: var(--bold-color) !important;
 }
 
-/*
- * Keep list bullet padding the same between viewer and editor.
- * This is annoying with the cursor in the editor as there is a gap.
- */
-/*
-.cm-formatting-list
-{
-     padding-right: 4px !important;
-}
-*/
-
-/*
- * Keep sub-list indenting the same between viewer and editor.
- * This assumes --list-indent is default at 2em.
- */
-/*
-.cm-indent 
-{
-    text-indent: 1em !important;
-}
-*/
-
-.mermaid .note {
+*/ .mermaid .note {
   fill: var(--mermaid-note) !important;
 }
-
 .mermaid .loopLine {
   stroke: var(--mermaid-loopline) !important;
 }
-
 .mermaid .loopText > tspan,
 .mermaid .entityLabel {
   fill: var(--red) !important;
 }
-
 .mermaid .exclude-range {
   fill: var(--mermaid-exclude) !important;
 }
@@ -445,11 +281,9 @@ pre[class*="language-"] {
 .calendar .week-num {
   color: var(--calendar-week) !important;
 }
-
 .calendar .today {
   color: var(--calendar-today) !important;
 }
-
 .calendar .week-num:hover,
 .calendar .day:hover {
   color: var(--calendar-hover) !important;
