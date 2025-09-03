@@ -12,7 +12,6 @@ An enhanced [Nord](https://github.com/arcticicestudio/nord) theme for [Obsidian]
 
 # Preview
 
-![](dark0.png)
 ![](dark1.png)
 ![](dark2.png)
 
