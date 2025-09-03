@@ -493,7 +493,7 @@ input[type="checkbox"]:checked::after {
   > input[type="checkbox"]:checked::before {
   top: 50%;
   left: 50%;
-  transform: translate(-49%, -55%); /* perfect centering */
+  transform: translate(-49%, -50%); /* perfect centering */
   width: 1.55em;
   height: 1.55em;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1220 1850'%3E%3Cpath fill='currentColor' d='M658 359v2v119q130 17 232.5 94.5t152.5 196.5t35 248q-22 164 -139.5 281t-280.5 137v121q164 -17 293.5 -111.5t195.5 -239.5t49 -306q-11 -141 -85.5 -260t-193 -193.5t-259.5 -88.5zM539 361q-184 17 -321 133l84 87q104 -82 237 -98v-122zM133 579q-116 139 -133 322h119q20 -133 99 -237zM0 1019q17 181 133 322l85 -84q-82 -107 -97 -238h-121zM302 1344l-84 82q141 116 321 135v-118q-130 -17 -237 -99zM630 658v316l271 161l-45 76l-317 -192v-361h91z'/%3E%3C/svg%3E");
