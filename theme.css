@@ -179,6 +179,8 @@ body {
   --dataview-key-background: rgba(var(--frost2_x), 0.3);
   --dataview-value: var(--text-faint);
   --dataview-value-background: rgba(var(--red_x), 0.3);
+
+  --search-clear-button-color: var(--red);
 }
 
 table {
