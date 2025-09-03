@@ -14,3 +14,5 @@ An enhanced [Nord](https://github.com/arcticicestudio/nord) theme for [Obsidian]
 
 ![](dark1.png)
 ![](dark2.png)
+
+# If you use this theme leave a star :)
